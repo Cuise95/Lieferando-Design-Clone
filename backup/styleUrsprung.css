@@ -1,0 +1,539 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: #fb6100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    z-index: 1;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+#logoNav {
+    height: 30px;
+    margin-right: 5px;
+    color: white;
+}
+
+
+#fixedLogoContainer {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: azure;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;    
+}
+
+.address {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+}
+
+.leftPage {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+}
+
+.leftPage img {
+    height: 255px;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+.round-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.round-picture img {
+    height: 100px;
+    scale: .8;
+}
+
+.absolute {
+    position: absolute;
+    top: 27%;
+    left: 38%;
+}
+
+
+.shoppingBasket {
+    position: fixed;
+    overflow: scroll;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 24%;
+    box-shadow: 0 1px 1px 1px #d7d7d7;
+}
+
+.shoppingBasket h3 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 10px
+}
+
+.borderBottom {
+    margin-top: 20px;
+    height: 5px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.fa-star {
+    color: #fb6100;
+}
+
+.fa-star:hover {
+    scale: 1.1;
+}
+
+.ratingStars span {
+    color: #fb6100;
+    cursor: pointer;
+}
+
+.restaurantInfos {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 1em;
+}
+
+.icons i {
+    font-size: 18px;
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.icons i:hover {
+    color: #fb6100;
+}
+
+.nameAndIcons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerShortInfos {
+    display: flex;
+    width: 575px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.deliveryTime {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.deliveryCost {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.minOrder {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.freeDelivery {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fa-check {
+    color: green;
+}
+
+.headerText {
+    margin-top: 5px;
+}
+
+.headerSpan {
+    font-size: 14px;
+}
+
+
+.selection{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 158, 96, 0.072);
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.selection span {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.pizzaHeader, .saladHeader, .drinksHeader, .favoritesHeader {
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 158, 96, 0.072);
+    border-radius: 2px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pizzaHeader span, .saladHeader span, .drinksHeader span, .favoritesHeader span{
+    font-weight: bold;
+    text-align: center;
+}
+
+#selectionImgSalad {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center left;
+    border-radius: 2px;
+}
+
+#roundImg {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    height: 130px;
+}
+
+#selectionImgPizza {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    object-fit: cover;
+    object-position:  left center;
+    border-radius: 2px;
+}
+
+#selectionImgDrinks {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center left;
+    border-radius: 2px;
+}
+
+#salatLink, #pizzaLink {
+    text-decoration: none;
+    color: black
+}
+.selection span:hover {
+    color:rgb(255, 136, 0);
+    cursor: pointer;
+}
+
+.dishDiv {
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: all 75ms ease-in-out;
+}
+
+.dishDiv:hover {
+    border: 1px solid rgb(43, 43, 243);
+    border-radius: 5px;
+    transition: all 75ms ease-in-out;
+}
+
+.dishName {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    justify-content: space-between;
+}
+
+.dishName i {
+    font-size: 24px;
+}
+
+.dishName i:hover {
+    color: blue;
+    cursor: pointer;
+}
+.dishDescription {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.dishPrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+}
+
+#selectedFood {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5em;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 100px;
+    width: 300px; 
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+#note {
+    text-decoration: underline;
+}
+
+.fa-trash-can {
+    margin-right: 10px;
+}
+
+.remarks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.remarks span:hover {
+    cursor: pointer;
+}
+
+#noteContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.inputNote {
+    margin-top: 10px;
+    width: 277px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+#noteBtn {
+    margin-top: 10px;
+    width: 25px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#noteBtn:hover {
+    cursor: pointer;
+}
+
+#noteItself{
+    margin-top: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.basketBtns i {
+    border: 1px solid lightgray;
+    padding: 4px;
+}
+
+.basketBtns i:hover{
+    cursor: pointer;
+}
+
+#emptyBasket {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa-cart-plus {
+    font-size: 64px;
+    margin-bottom: 1em;
+}
+
+.d-none {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#menu {
+    background: white;
+    box-shadow: 0 0 5px grey;
+    height: 100%;
+    max-width: 80%;
+    position: fixed;
+    width: 250px;
+    z-index: 45;
+    top: 0px;
+    left: 0;
+    transition: all 5s ease-in-out;
+}
+
+.costsDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.subTotal, .deliveryCosts, .sumTotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+
+#submitBtn {
+background-color: #125fca;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
+}
+
+.extrasAbsolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.extrasSelection {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    border: 2px solid #fb6100;
+    border-radius: 10px;
+}
+
+.confirmed {
+    color: green;
+    font-size: 64px;
+}
+
+.extrasSelection span {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#closeConfirmation {
+    font-size: 22px;
+    position: absolute;
+    top: 25%;
+    right: 23.5%;
+    border: none;
+    background-color: transparent;
+}
+
+#closeConfirmation:hover {
+    color:#fb6100;
+    cursor: pointer;
+}
+/* .fa-trash-can {
+
+} */
+
+/* @keyframes {
+    #menu
+} */

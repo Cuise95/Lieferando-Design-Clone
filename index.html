@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c9e46dba42.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+    <title>FastDelivery</title>
+    <link rel="icon" type="image/x-icon" href="./img/scooter.png" />
+  </head>
+  <body id="body" onload="render()">
+    <!--Navigationsleiste-->
+    <div class="nav">
+      <div class="logo"><b>FastDelivery</b>.at</div>
+      <span class="address">6900 Bregenz</span>
+      <i id="openMenu" class="fa-solid fa-bars"></i>
+    </div>
+
+    <div id="content" class="content">
+      <!--Linke Seite-->
+      <div class="leftPage">
+        <img src="./img/pizza_header.jpg" alt="" />
+
+        <div class="absolute">
+          <img id="roundImg" src="./img/233.jpg" alt="" />
+        </div>
+        <div class="restaurantInfos">
+          <div class="nameAndIcons">
+            <h2>The Italian Job</h2>
+            <!--Icons-->
+            <div class="icons">
+              <i
+                id="mapsBtn"
+                class="info fa-solid fa-circle-info"
+                onclick="openInfo()"
+              ></i>
+              <i id="likeBtn" class="fa-regular fa-heart" onclick="like()"></i>
+            </div>
+          </div>
+
+          <!--Stars-->
+          <div class="ratingStars">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(239 Bewertungen)</span>
+          </div>
+          <!--Restaurant Info Text-->
+          <div class="headerShortInfos">
+            <i class="fa-regular fa-clock">
+              <span class="deliveryTime">35-60 min</span></i
+            >
+            <i class="fa-solid fa-truck">
+              <span class="deliveryCost">2€</span>
+            </i>
+            <i class="fa-solid fa-basket-shopping">
+              <span class="minOrder">Min. 14,00€</span></i
+            >
+            <i class="fa-solid fa-check">
+              <span class="freeDelivery"
+                >Kostenlose Lieferung ab 40,00€</span
+              ></i
+            >
+          </div>
+        </div>
+
+        <!--Menü-->
+
+        <div class="selection">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a id="salatLink" href="#selectionImgPizza"><span>Pizza</span></a>
+          <a id="salatLink" href="#selectionImgSalad"><span>Salate</span></a>
+          <a id="salatLink" href="#selectionImgDrinks"><span>Getränke</span></a>
+        </div>
+
+        <div id="mobileBtnContainer"></div>
+
+        <div class="favoritesHeader">
+          <span>Beliebte Gerichte</span>
+        </div>
+
+        <div id="favoriteDishes"></div>
+
+        <img id="selectionImgPizza" src="./img/pizza1.jpg" alt="" />
+        <div class="pizzaHeader">
+          <span>Pizza</span>
+        </div>
+
+        <div id="pizza"></div>
+
+        <img id="selectionImgSalad" src="./img/salat.jpg" alt="" />
+        <div class="saladHeader">
+          <span>Salate</span>
+        </div>
+
+        <div id="salad"></div>
+
+        <img id="selectionImgDrinks" src="./img/cola.jpg" alt="" />
+        <div class="drinksHeader">
+          <span>Getränke</span>
+        </div>
+
+        <div id="drinks"></div>
+      </div>
+
+      <!--Rechte Seite-->
+      <div id="shoppingBasket" class="shoppingBasket">
+        <h3>Warenkorb</h3>
+        <div class="borderBottom"></div>
+        <div id="basketContent">
+          <div id="emptyBasket">
+            <i class="fa-solid fa-cart-plus"></i>
+            <h4>Fülle deinen Warenkorb</h4>
+            <span>Dein Warenkorb ist zurzeit noch leer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileContainer" class="d-none">
+      <span id="close">x</span>
+    </div>
+  </body>
+</html>
