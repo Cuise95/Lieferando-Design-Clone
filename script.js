@@ -372,9 +372,11 @@ function fullBasketTemplate(i) {
   <div id="selectedFood">
   <div id="orderContainer" class="orderContainer">
     <div class="order">
-      <span>${selectedAmount[i]}</span>
-      <span>${selectedFood[i]}</span>
+      <span class="selectedAmount">${selectedAmount[i]}</span>
+      <div class="foodAndPriceContainer">
+      <span class="foodName">${selectedFood[i]}</span>
       <span>${selectedPrices[i].toFixed(2).replace(".", ",")}€</span>
+      </div>
     </div>
     <div class="remarks">
       <div class="basketBtns">
@@ -471,13 +473,13 @@ function infoTemplate() {
   <h3>Über das Restaurant</h3>
   <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.798811556171!2d9.759822415315918!3d47.51330920241166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b0d50f80895fb%3A0xb0486c6f71c216a!2sGasthaus%20Seibl!5e0!3m2!1sde!2sat!4v1661952652152!5m2!1sde!2sat" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <div class="openingHoursContainer">
-  <div class="openingHoursEach"><span>Montag</span> <span>11:00-23:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Dienstag</span> <span>11:00-23:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Mittwoch</span> <span>11:00-23:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Donnerstag:</span> <span>11:00-23:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Freitag</span> <span>11:00-01:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Samstag</span> <span>11:00-01:00 Uhr</span></div>
-  <div class="openingHoursEach"><span>Sonntag</span> <span>11:00-01:00 Uhr</span></div>
+  <span>Montag</span> <span>11:00-23:00 Uhr</span>
+  <span>Dienstag</span> <span>11:00-23:00 Uhr</span>
+  <span>Mittwoch</span> <span>11:00-23:00 Uhr</span>
+  <span>Donnerstag</span> <span>11:00-23:00 Uhr</span>
+  <span>Freitag</span> <span>11:00-01:00 Uhr</span>
+  <span>Samstag</span> <span>11:00-01:00 Uhr</span>
+  <span>Sonntag</span> <span>11:00-01:00 Uhr</span>
 
   </div>
   <button onclick="closeInfo()" id="closeInfo">x</button>
